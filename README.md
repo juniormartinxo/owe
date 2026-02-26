@@ -3,6 +3,7 @@
 Extensão para abrir arquivos e pastas do workspace diretamente no **Windows Explorer**.
 
 Suporte incluído para:
+
 - workspace local no Windows
 - workspace no **WSL** (conversão automática de path Linux para path Windows)
 - URIs remotas `vscode-remote://wsl+...` (via `\\wsl.localhost\\<distro>\\...`)
@@ -12,11 +13,11 @@ Suporte incluído para:
 - `Open in Windows Explorer` (`antigravity.openInWindowsExplorer`)
 
 Onde aparece:
+
 - Menu de contexto do Explorer (arquivo/pasta)
 - Command Palette
 
-<img width="1345" height="803" alt="image" src="https://github.com/user-attachments/assets/45fea2ea-4201-484f-9b44-4c701fdcc87d" />
-
+![image](https://github.com/user-attachments/assets/45fea2ea-4201-484f-9b44-4c701fdcc87d)
 
 ## Como testar localmente
 
