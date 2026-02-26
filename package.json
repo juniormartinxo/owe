@@ -1,0 +1,54 @@
+{
+  "name": "antigravity-open-in-windows-explorer",
+  "displayName": "Open in Windows Explorer",
+  "icon": "images/icon.png",
+  "description": "Open files and folders from the current workspace in Windows Explorer, including WSL paths.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juniormartinxo/owe.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "extensionKind": [
+    "workspace",
+    "ui"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity.openInWindowsExplorer",
+        "title": "Open in Windows Explorer"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "antigravity.openInWindowsExplorer",
+          "group": "navigation",
+          "when": "resourceScheme == file || (resourceScheme == vscode-remote && resourceAuthority =~ /^wsl\\+/)"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "antigravity.openInWindowsExplorer",
+          "when": "resourceScheme == file || (resourceScheme == vscode-remote && resourceAuthority =~ /^wsl\\+/)"
+        }
+      ],
+      "editor/tab/context": [
+        {
+          "command": "antigravity.openInWindowsExplorer",
+          "group": "navigation",
+          "when": "resourceScheme == file || (resourceScheme == vscode-remote && resourceAuthority =~ /^wsl\\+/)"
+        }
+      ]
+    }
+  }
+}
