@@ -15,6 +15,9 @@ Onde aparece:
 - Menu de contexto do Explorer (arquivo/pasta)
 - Command Palette
 
+<img width="1345" height="803" alt="image" src="https://github.com/user-attachments/assets/45fea2ea-4201-484f-9b44-4c701fdcc87d" />
+
+
 ## Como testar localmente
 
 1. Abra este repositório no VSCode/Antigravity.
